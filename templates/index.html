@@ -37,30 +37,42 @@
     <title>  Raw Material Prediction </title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}">  </script>
-
-     <!-- Navigation bar heading starts from hear -->
-    
-	    <!--- start-header-->
-		
-            <!--start-top-nav-->
-
-    <!-- <ul class="navbar">
-        <li><a href="/">Raw Material Forecasting in Automobile Industry</a></li>
-        <li><a href="/"><result>Home</result></a></li>
-    </ul> -->
 </head>
  <body >
 
-
-    <div class="img " >
-             
-<di</div>
-            <div class="card " >
-                 <h4 class="card-title">Enter your details</h4>
-                      
+   <!-- Navigation bar heading starts from hear -->
     
+	<!--- start-header-->
+		<!--start-top-nav-->
+    <!-- <div class="">
+      <ul class="navbar">
+         <li><a href="/">Raw Material Forecasting in Automobile Industry</a></li>
+         <li><a href="/"><result>Home</result></a></li>
+       </ul>
+    </div> -->
+    <div id="abc">
+        <nav class="nav">
+            <ul>
+                <!-- <h1 style="text-align:left;"> Raw Material Prediction   </h1> -->
+                <li><a href="http://localhost:5000/predict" style="font-weight:bolder;">Prediction System</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News Articles</a></li>
+                <!-- <li><a href="../templates/articles.html">News Articles</a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+                       <div class="card " >
+                        <h4 class="card-title">Enter your details</h4>
+                              
     <form name="f1" action = "http://localhost:5000/prediction" method = "POST" >
-        <div class="details" >  
         <!-- Starting Year -->
         <label for="startyear"> Start Year: </label>
         <input type="number" name="startyear" id="Starting_Year" required>
@@ -84,8 +96,7 @@
             <!-- Predict Button -->
             <button type="submit"value="submit" class="btn btn-success"> Predict </button>
         </div>
-    </div>
     </form>
-
+        
 </body>
 </html>
