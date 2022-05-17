@@ -39,15 +39,16 @@
     <title>  Raw Material Prediction </title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}">  </script>
-    </head>
+
+    <ul class="nav">
+      <div><li><a href="/">Raw Material Forecasting in Automobile Industry</a></li></div>
+      <div> <li> <a href="http://localhost:5000"> <home> Home </home></a> </li> </div>
+      <div> <li> <a href="http://localhost:5000/predict">  <predicaton> Predication System </predicaton></a> </li> </div>
+          
+   </ul>
+
+   </head>
     <body>
-    
-        <ul class="nav">
-            <div><li><a href="/">Raw Material Forecasting in Automobile Industry</a></li></div>
-           <div> <li> <a href="http://localhost:5000">  <home>home </home></a> </li> </div>
-           <div> <li> <a href="http://localhost:5000/predict">  <predicaton >predication system </predicaton></a> </li> </div>
-                
-          </ul>
 
           <div class="data "></div>
     <table id = "datatable"  class="table-bordered">

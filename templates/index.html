@@ -37,23 +37,30 @@
     <title>  Raw Material Prediction </title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}">  </script>
+
+     <!-- Navigation bar heading starts from hear -->
+    
+	    <!--- start-header-->
+		
+            <!--start-top-nav-->
+
+    <!-- <ul class="navbar">
+        <li><a href="/">Raw Material Forecasting in Automobile Industry</a></li>
+        <li><a href="/"><result>Home</result></a></li>
+    </ul> -->
 </head>
  <body >
 
-   <!-- Navigation bar heading starts from hear -->
-    
-	<!--- start-header-->
-		<!--start-top-nav-->
-      <ul class="navbar">
-         <li><a href="/">Raw Material Forecasting in Automobile Industry</a></li>
-         <li><a href="/"><result>home</result></a></li>
-       </ul>
-                <h4 class="card-title">Enter your details</h4>
 
-                       <div class="card " >
-                        <h4 class="card-title">Enter your details</h4>
-                              
+    <div class="img " >
+             
+<di</div>
+            <div class="card " >
+                 <h4 class="card-title">Enter your details</h4>
+                      
+    
     <form name="f1" action = "http://localhost:5000/prediction" method = "POST" >
+        <div class="details" >  
         <!-- Starting Year -->
         <label for="startyear"> Start Year: </label>
         <input type="number" name="startyear" id="Starting_Year" required>
@@ -77,7 +84,8 @@
             <!-- Predict Button -->
             <button type="submit"value="submit" class="btn btn-success"> Predict </button>
         </div>
+    </div>
     </form>
-        
+
 </body>
 </html>
