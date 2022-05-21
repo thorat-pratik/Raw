@@ -1,12 +1,11 @@
 <html lang="en">
 <head>
 
-    <!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
 <!-- Ajax -->
-
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -17,11 +16,6 @@
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-<!-- highcharts -->
-
-<script src = "https://code.highcharts.com/highcharts.js"></script> 
-<script src = "https://code.highcharts.com/modules/data.js"></script>
 
 <!-- Jquery Cdn -->
 
@@ -45,7 +39,7 @@
 	<!--- start-header-->
 		<!--start-top-nav-->
     <!-- <div class="">
-      <ul class="navbar">
+       <ul class="navbar">
          <li><a href="/">Raw Material Forecasting in Automobile Industry</a></li>
          <li><a href="/"><result>Home</result></a></li>
        </ul>
@@ -61,16 +55,8 @@
             </ul>
         </nav>
     </div>
-
-
-
-
-
-
-
-
-                       <div class="card " >
-                        <h4 class="card-title">Enter your details</h4>
+    <div class="card " >
+        <h4 class="card-title">Enter your details</h4>
                               
     <form name="f1" action = "http://localhost:5000/prediction" method = "POST" >
         <!-- Starting Year -->
@@ -94,7 +80,7 @@
         <button type="button" onclick="TotalYears()" class="btn btn-warning"> Confirm No Of Vehicles </button>
         
             <!-- Predict Button -->
-            <button type="submit"value="submit" class="btn btn-success"> Predict </button>
+            <button type="submit" value="submit" title="First Confirm no. of vehicles" id="predict" class="btn btn-success" disabled="disabled"> Predict </button>
         </div>
     </form>
         
