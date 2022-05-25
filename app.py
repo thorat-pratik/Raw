@@ -1,6 +1,6 @@
+
 from flask import Flask, render_template, request
 import pickle
-
 
 #initialize app
 app = Flask(__name__)
@@ -24,7 +24,7 @@ copper_model = pickle.load(open('copper_model.pkl', 'rb'))
 def HomePage():
     return render_template("entry.html")
 
-@app.route('/predict')
+@app.route('/predict',methods=['GET','POST'])
 def home():
        return render_template("index.html")
 
@@ -118,4 +118,4 @@ def predict():
 
 
 if __name__ == '__main__':
-   app.run(use_reloader = True,debug=True)
+   app.run(use_reloader = True,debug=True,port=8080,host='0.0.0.0')
